@@ -68,8 +68,8 @@ public class MyComplex {
     }
     
     public boolean equals(double real,double imag) {
-        Double rel = real;
-        Double im = imag;
+        Double rel = this.real;
+        Double im = this.imag;
 
         if(rel.compareTo(real)==0 && im.compareTo(imag)==0){
             return true;

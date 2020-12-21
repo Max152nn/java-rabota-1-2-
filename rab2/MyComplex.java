@@ -71,12 +71,13 @@ public class MyComplex {
         Double rel = real;
         Double im = imag;
 
-        if(rel.compareTo(real)==0 && im.compareTo(im)==0){
+        if(rel.compareTo(real)==0 && im.compareTo(imag)==0){
             return true;
         }else {
             return false;
         }
 
+    }
 
     public double magnitude(){
         return Math.sqrt(real*real + imag*imag);

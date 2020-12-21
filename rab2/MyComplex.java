@@ -61,6 +61,21 @@ public class MyComplex {
         return Double.compare(complex.real, real) == 0 &&
                 Double.compare(complex.imag, imag) == 0;
     }
+    
+    @Override
+    public int hashCode() {
+        return Objects.hash(real, imag);
+    }
+    
+    public boolean equals(double real,double imag) {
+        Double rel = real;
+        Double im = imag;
+
+        if(rel.compareTo(real)==0 && im.compareTo(im)==0){
+            return true;
+        }else {
+            return false;
+        }
 
 
     public double magnitude(){
